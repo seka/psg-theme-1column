@@ -2,6 +2,11 @@
   "name": "psg-theme-pstyle",
   "version": "0.0.1",
   "description": "Single grid theme of postcss-style-guide",
+  "keywords": [
+    "psg-theme",
+    "style-guide",
+    "postcss"
+  ],
   "dependencies": {},
   "devDependencies": {
     "postcss": "^4.1.11",
