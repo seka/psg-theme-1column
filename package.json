@@ -17,7 +17,7 @@
     "url": "git+https://github.com/seka/psg-theme-pstyle.git"
   },
   "author": "seka",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/seka/psg-theme-pstyle/issues"
   },
