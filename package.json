@@ -1,0 +1,24 @@
+{
+  "name": "psg-theme-pstyle",
+  "version": "1.0.0",
+  "description": "Single grid theme of postcss-style-guide",
+  "main": "index.js",
+  "dependencies": {
+    "postcss": "^4.1.11",
+    "postcss-style-guide": "^0.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seka/psg-theme-pstyle.git"
+  },
+  "author": "seka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seka/psg-theme-pstyle/issues"
+  },
+  "homepage": "https://github.com/seka/psg-theme-pstyle#readme"
+}
