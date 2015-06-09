@@ -1,7 +1,7 @@
 {
-  "name": "psg-theme-pstyle",
+  "name": "psg-theme-1column",
   "version": "0.0.1",
-  "description": "Single grid theme of postcss-style-guide",
+  "description": "1 column theme of postcss-style-guide",
   "keywords": [
     "psg-theme",
     "style-guide",
@@ -17,12 +17,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/seka/psg-theme-pstyle.git"
+    "url": "git+https://github.com/seka/psg-theme-1column.git"
   },
   "author": "seka",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/seka/psg-theme-pstyle/issues"
+    "url": "https://github.com/seka/psg-theme-1column/issues"
   },
-  "homepage": "https://github.com/seka/psg-theme-pstyle#readme"
+  "homepage": "https://github.com/seka/psg-theme-1column#readme"
 }

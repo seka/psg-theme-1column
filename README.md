@@ -1,11 +1,11 @@
-# psg-theme-pstyle 
+# psg-theme-pstyle
 
 Single grid theme of postcss-style-guide
 
 ## Install
 
 ```shell
-$ npm install psg-theme-pstyle
+$ npm install psg-theme-1column
 ```
 
 ## Theme
