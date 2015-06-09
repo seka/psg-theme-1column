@@ -1,4 +1,4 @@
-# psg-theme-pstyle
+# psg-theme-1column
 
 Single grid theme of postcss-style-guide
 
