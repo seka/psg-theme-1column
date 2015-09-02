@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title><%= projectName %></title>
-        <style><%- codeStyle %><%- tmplStyle %><%- rootStyle %><%- processedCSS %></style>
+        <style><%- codeStyle %><%- tmplStyle %><%- processedCSS %></style>
     </head>
     <body>
         <header class="docs-header">
@@ -14,10 +14,14 @@
         <% maps.forEach(function (map) { %>
         <section>
             <div class="container">
+                <% if (showCode) { %>
                 <div><%- map.html %></div>
                 <div>
                     <pre class="code"><code class="lang-css"><%- map.rule %></code></pre>
                 </div>
+                <% } else { %>
+                <div><%- map.html %></div>
+                <% } %>
             </div>
         </section>
         <% })%>
