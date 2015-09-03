@@ -51,8 +51,8 @@ blockquote {
   color: #777;
 }
 
-blockquote p {
-  display: inline;
+blockquote > p {
+  margin: 0;
 }
 
 ul, ol {
@@ -72,18 +72,10 @@ code, pre {
   font-size: 85%;
 }
 
-code {
-  padding: 2px 4px;
-  color: #ff261e;
-  background-color: #f5f2f0;
-  border-radius: .2rem;
-}
-
 pre {
   position: relative;
   display: block;
-  margin: .5em 0;
-  padding: 40px 15px 15px 15px;
+  padding: 40px 15px 15px;
   line-height: 1.5;
   white-space: pre-wrap;
   background-color: #f5f2f0;
@@ -91,7 +83,6 @@ pre {
 }
 
 pre:before {
-  content: "Example";
   position: absolute;
   top: 0;
   left: 0;
@@ -102,32 +93,49 @@ pre:before {
   text-indent: 15px;
 }
 
-pre.code {
-  margin: 0;
+.description > pre:before {
+  content: "Example";
 }
 
-pre.code:before {
+.code > pre:before {
   content: "css";
 }
 
-pre code {
+pre > code {
   padding: 0;
-  color: inherit;
+  background-color: #f5f2f0;
   border: 0;
+  border-radius: .2rem;
+}
+
+.description p > code {
+  padding: 2px 4px;
+  background-color: #f5f2f0;
+  color: #ff261e;
+  border-radius: .2rem;
+}
+
+.description > p, .description > pre {
+  margin: .5em 0;
 }
 
 /*
  * header
  */
 
-.docs-header {
+header {
   padding: .5em .5em .5em 0;
   background-color: #1976d2;
   border-bottom: .08em solid rgba(0, 0, 0, .1);
 }
 
-.docs-header h1 {
-  font-size: 2.6rem;
+header > .container {
+  width: 70%;
+  margin: 15px auto;
+}
+
+.headline {
+  font-size: 2.2rem;
   color: #fff;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
@@ -136,7 +144,7 @@ pre code {
  * Sections
  */
 
-.container {
+section > .container {
   width: 70%;
   margin: 15px auto;
 }
@@ -147,14 +155,13 @@ pre code {
 
 footer {
   padding: .2em 0 0;
-  margin: auto;
   text-align: center;
   background-color: #455a64;
   overflow: hidden;
   font-size: 1rem;
 }
 
-footer .container {
+footer > .container {
   margin: 8px auto;
 }
 

@@ -6,21 +6,21 @@
     <style><%- codeStyle %><%- tmplStyle %><%- processedCSS %></style>
   </head>
   <body>
-  <header class="docs-header">
+  <header>
     <div class="container">
-      <h1><%= projectName %></h1>
+      <h1 class="headline"><%= projectName %></h1>
     </div>
   </header>
     <% maps.forEach(function (map) { %>
       <section>
         <div class="container">
           <% if (showCode) { %>
-            <div><%- map.html %></div>
-            <div>
-              <pre class="code"><code class="lang-css"><%- map.rule %></code></pre>
+            <div class="description"><%- map.html %></div>
+            <div class="code">
+              <pre><code class="lang-css"><%- map.rule %></code></pre>
             </div>
           <% } else { %>
-            <div><%- map.html %></div>
+            <div class="description"><%- map.html %></div>
           <% } %>
         </div>
       </section>
