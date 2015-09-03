@@ -24,9 +24,12 @@ It's details of the above.
 
 ## Buttons
 
+Use the button classes on an `<a>`, `<button>`, `<input>` element.
+
 <button class="btn">Button</button>
 
     <button class="btn">Button</button>
+
 */
 .btn {
   display: inline-block;
