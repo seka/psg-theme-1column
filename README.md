@@ -18,6 +18,8 @@ It's details of the above.
 
 ```
 /*
+@styleguide
+
 # Overview
 
 1 column theme of postcss-style-guide
