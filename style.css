@@ -12,15 +12,7 @@ body {
   margin: 0;
 }
 
-a:link {
-  color: #08c;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
   margin: 0;
   padding: 0;
   color: #333;
@@ -36,6 +28,7 @@ h2 {
 }
 h3 { font-size: 1.4rem; }
 h4 { font-size: 1.2rem; }
+h5 { font-size: 1.0rem; }
 
 p {
   color: #333;
@@ -98,7 +91,7 @@ pre:before {
 }
 
 .code > pre:before {
-  content: "css";
+  content: "Rule set";
 }
 
 pre > code {
@@ -141,12 +134,53 @@ header > .container {
 }
 
 /*
- * Sections
+ * contents
  */
 
-section > .container {
+main {
   width: 70%;
   margin: 15px auto;
+  display: table;
+  clear: both;
+}
+
+main:before, main:after {
+  webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.contents {
+  width: 70%;
+  float: left;
+}
+
+.sidebar {
+  width: 30%;
+  margin-top: 10px;
+  float: left;
+}
+
+.nav {
+  margin: 5px 0;
+  padding-left: 15px;
+  list-style: none;
+  font-size: .8rem;
+}
+
+.nav-title {
+  margin: 0px;
+}
+
+.nav-link {
+  padding-left: 15px;
+  color: #868686;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  border-left: 2px solid #ff261e;
+  color: #C8C8C8;
 }
 
 /*
@@ -172,7 +206,11 @@ footer p {
 }
 
 footer a {
-  color: #fff;
   font-size: .9rem;
+  color: #fff;
   text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
